@@ -191,3 +191,18 @@ padding-bottom: 10px;
 #schedule{
 margin-top: 10px;
 }
+
+a {
+  /* cursor: pointer; */
+  color:#fff;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+.copyright {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
