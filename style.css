@@ -19,16 +19,17 @@ body{
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 
+
 }
- 
-#header{
+ /* #header{
   
   position: sticky;
   top:0;
 }
 #header +main{
   margin-top: 150px;
-}
+} */
+
  
  
 .divfixed{
@@ -53,7 +54,7 @@ flex-grow: 1;
 
 .grid-container{
 display: grid;
-
+margin-bottom: .75em;
 grid-template-columns: repeat(11, 1fr);
 
 }
@@ -92,21 +93,44 @@ flex:wrap;
 flex-direction: row;
 justify-content: center;
 
-
 }
+
+ .dropdown .dropdown-menu {
+  display:none;
+}
+
 .dropdown:hover> .dropdown-menu, .dropend:hover> .dropdown-menu{
   display: block;
-  margin-top: .125em;
+  margin-top:.125em;
   
 }
 
-.dropdown:hover>.dropdown-menu{
-  
-background-color: antiquewhite;
-color: maroon
-}
-.dropdown-menu{
+
+.dropend:hover > .dropdown-menu{
+ /* visibility: visible;  background-color: antiquewhite;*/
+ position:absolute;
+ top:0;
+ left:100%;
+  margin-left: .125em;
+/*color: maroon*/
+} 
+
+/* .dropdown-menu{
   color: maroon;
+} */ *
+
+/* .navbar-nav li:hover > ul.dropdown-menu{
+  display:block;
+}
+
+.dropend{
+  position:relative;
+}
+.dropend > .dropdown-menu{
+  top:0;
+  left:100%;
+  margin-top: -6px; */
+
 }
 .feature-icon {
   width: 4rem;
@@ -128,8 +152,9 @@ a.nav-link{
 .btn-outline-success{
   color: aliceblue;
 }
-.row {
 
+
+.row {
 display: flex;
 -ms-flex-wrap: wrap;
 flex-wrap: wrap;
@@ -144,6 +169,7 @@ margin-bottom: -30px;
 
 p{
 margin-top: 0em;
+
 
 }
 
@@ -205,4 +231,44 @@ a {
   margin-block-end: 1em;
   margin-inline-start: 0;
   margin-inline-end: 0;
+}
+
+/*footer*/
+.bottom-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #b41010;
+  margin-top: 10px;
+  padding: 20px 20px;
+  
+}
+
+.copyright{
+text-align: left;
+font-size: .65em;
+padding-top: 20px;
+line-height:1 ;
+
+  
+}
+
+/*photos page*/
+h1{
+ 
+  color:white;
+  display: inline-block;
+  line-height: 1;
+  font-weight: 50;
+  font-size: 2em;
+  Position:relative;
+  top:7px;
+
+}
+.page-header {
+  background: #d33209;
+}
+
+.photos-container{
+  min-height: 600px;
 }
