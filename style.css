@@ -103,17 +103,17 @@ justify-content: center;
   display: block;
   margin-top:.125em;
   
+  
 }
 
 
 .dropend:hover > .dropdown-menu{
- /* visibility: visible;  background-color: antiquewhite;*/
+
  position:absolute;
  top:0;
  left:100%;
   margin-left: .125em;
-/*color: maroon*/
-} 
+
 
 /* .dropdown-menu{
   color: maroon;
