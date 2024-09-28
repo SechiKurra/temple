@@ -245,20 +245,22 @@ a {
 }
 
 .copyright{
-text-align: left;
-font-size: .65em;
-padding-top: 20px;
-line-height:1 ;
-
-  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.65em;
+  color: black;
+  padding-top: 30px;
+  line-height: 1; 
+ 
 }
 
-/*photos page*/
+/*photos, videos, Services page*/
 h1{
  
   color:white;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.25;
   font-weight: 50;
   font-size: 2em;
   Position:relative;
@@ -269,6 +271,30 @@ h1{
   background: #d33209;
 }
 
-.photos-container{
+.page-container{
   min-height: 600px;
+}
+/*services page*/
+h2{
+  
+    color:white;
+    display:inline-block;
+   
+    line-height: 0.25;
+    font-weight: 20;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: right;
+    Position:relative;
+    
+    top:15px;
+  
+  
+}
+.flex-row .caption{
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  flex:1 0 auto;
+  background-color:antiquewhite ;
 }
